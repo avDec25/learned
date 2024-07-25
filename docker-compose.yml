@@ -1,0 +1,9 @@
+services:
+  mysql:
+    image: mysql:latest
+    ports:
+      - "3306:3306"
+    volumes:
+      - C:\Users\user\IdeaProjects\apicaller\localdata\mysql:/var/lib/mysql
+    environment:
+      - MYSQL_ROOT_PASSWORD=sql8pass
